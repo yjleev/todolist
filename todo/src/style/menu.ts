@@ -12,4 +12,12 @@ const Menu = styled.div<{ position: { x: number, y:number} }>`
     color: #333;
 `;
 
-export { Menu }
+const Span = styled.div`
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+`;
+
+export { Menu, Span }

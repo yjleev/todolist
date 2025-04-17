@@ -12,7 +12,7 @@ import useCreate from './component/create';
 import useSort from "./component/sort";
 import useTab from "./component/tap";
 import useEdit from "./component/edit";
-import { Menu } from "./style/menu";
+import { Menu, Span } from "./style/menu";
 
 
 function App() {
@@ -88,9 +88,9 @@ function App() {
           ))}
           {menu && (
             <Menu position={position}>
-              <span>완료</span>
-              <span>수정</span>
-              <span>삭제</span>
+              <Span>완료</Span>
+              <Span>수정</Span>
+              <Span>삭제</Span>
             </Menu>
            )}
           </ListBox>

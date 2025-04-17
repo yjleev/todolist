@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function useEdit() {
     const [menu, setMenu] = useState<boolean>(false);
@@ -10,12 +10,17 @@ function useEdit() {
         setPosition({ x: e.clientX, y: e.clientY });
     }
 
+    useEffect(() => {
+        const close = () => setMenu(false);
+        document.addEventListener("click", close);
+    }, []);
+
     return {
         menu,
         setMenu,
         position,
         setPosition,
-        onMenu
+        onMenu,
     }
 }
 
