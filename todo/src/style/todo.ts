@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-const Todo = styled.div<{ theme: { background: string; } }>`
-  background-color: ${(props) => props.theme.background};
+const Todo = styled.div<{ theme: { background: string; }; $selected: boolean }>`
+  background-color: ${(props) => (props.$selected ? "#aaa" : props.theme.background)};
   width: 100%;
-  height: 40px;
   border-radius: 5px;
   display: flex;
   align-items: center;

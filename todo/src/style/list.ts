@@ -5,6 +5,7 @@ const ListBox = styled.div`
     background: #fff;
     border-radius: 5px;
     padding: 10px 10px 0;
+    overflow: auto;
 `;
 
 export { ListBox }

@@ -6,7 +6,7 @@ const Menu = styled.div<{ position: { x: number, y:number} }>`
     left: ${(props) => props.position.x}px;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 5px;
     background-color: #ccc;
     color: #333;
